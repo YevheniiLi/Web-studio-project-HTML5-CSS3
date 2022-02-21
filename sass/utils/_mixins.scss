@@ -1,0 +1,24 @@
+@mixin tel {
+    @media screen and (min-width: 480px) {
+      @content;
+    }
+  }
+  
+  @mixin tab {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin desc {
+    @media screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+  
+  @mixin media($size:768px) {
+    @media screen and (min-width: $size) {
+      @content;
+    }
+  }
+  

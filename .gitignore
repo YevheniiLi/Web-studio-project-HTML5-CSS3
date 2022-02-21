@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+git rm -r --cached . 
+git add .
+git commit -am "Remove ignored files"
+git pull origin master
+ --allow-unrelated-histories
+git
