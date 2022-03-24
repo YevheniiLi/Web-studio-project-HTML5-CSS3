@@ -1,6 +1,12 @@
 .skill{
     padding-bottom: 94px;
-}
+    @media screen and (max-width: 1200px) {
+          visibility: hidden;
+          display: none;
+        }
+      }
+     
+
 
 .skill-list {
     display: flex;
