@@ -9,11 +9,6 @@
 }
 
 
-//     }
-//      @include desc {
-
-// }
-
 }
 
 .footer__container {
@@ -31,7 +26,7 @@
 }
 
 .page-footer {
-    background-color: var(--hero-color);
+    background-color: $hero-color;
     padding-top: 60px;
     padding-bottom: 60px;
    
@@ -41,7 +36,7 @@
 
 
 .page-footer__logo {
-    color:     var(--item-text-color);
+    color:     $item-text-color;
     font-family:  Raleway, cursive;
     font-weight: bold;
     font-size: 26px;
@@ -50,7 +45,7 @@
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &-tittle--white-theme {
-        color: var(--accent-color);
+        color: $accent-color;
     
 }
 
@@ -68,7 +63,7 @@
 
 .footer-list__adress{
     // width: 231px;
-    color: var(--item-text-color);
+    color: $item-text-color;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -84,7 +79,7 @@
     margin-top: 9px;
     & :hover ,
     & :focus {
-    color: var(--accent-color);
+    color: $accent-color;
     cursor: pointer;
 }
     @include tab {
@@ -96,7 +91,7 @@
 }
 
 .footer-list__link {
-    color: var(--contact-text-color);
+    color: $contact-text-color;
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
@@ -128,7 +123,7 @@
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: var(--item-text-color);
+        color: $item-text-color;
         margin-bottom: 20px;
         margin-top: 60px;
         @include tab {
@@ -162,13 +157,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--item-text-color);
+    color: $item-text-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) , background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
     &:hover,
     &:focus {
-    color: var(--item-text-color);
-    background-color:  var(--accent-color);
-    fill: var(--item-text-color);  
+    color: $item-text-color;
+    background-color:  $accent-color;
+    fill: $item-text-color;  
 }
     
 }
@@ -195,7 +190,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--item-text-color);
+    color: $item-text-color;
     margin-bottom: 20px;
     @include desc {
         margin-bottom: 0px;
@@ -219,8 +214,8 @@
         width: 358px;
     }
     height: 50px;
-    color: var(--item-text-color);
-    background-color: var(--hero-color);
+    color: $item-text-color;
+    background-color: $hero-color;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -230,11 +225,11 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-	    border-color:  var(--contact-text-color);
+	    border-color:  $contact-text-color;
     &::placeholder {
         font-size: 16px;
         line-height: 1.25;
-        color: var(--contact-text-color);
+        color: $contact-text-color;
     }
 }
 }
@@ -260,8 +255,8 @@
     line-height: 1.87;
     border-radius: 4px;
     letter-spacing: 0.06em;
-    background-color: var(--accent-color);
-    color: var(--item-text-color);
+    background-color: $accent-color;
+    color: $item-text-color;
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     outline: none;

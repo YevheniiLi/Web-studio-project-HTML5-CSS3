@@ -1,6 +1,6 @@
 
 .hero {
-    background: var(--hero-color);
+    background: $hero-color;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -20,7 +20,7 @@
 
 .hero__title {
     margin-bottom: 30px;
-    color: var(--item-text-color);
+    color: $item-text-color;
     font-weight: 900;
     // font-size: 44px;
     // line-height: 1.36;
@@ -45,14 +45,14 @@
     line-height: 1.87;
     padding: 10px 32px;
     border-radius: 4px;
-    background-color: var(--accent-color);
-    color: var(--item-text-color);
+    background-color: $accent-color;
+    color: $item-text-color;
     text-decoration: none;
     cursor: pointer;
         &:hover,
         &:focus {
-            background-color: var(--accent-color);
-            color: var(--item-text-color);
+            background-color: $accent-color;
+            color: $item-text-color;
     
 }
 }

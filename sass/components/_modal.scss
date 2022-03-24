@@ -12,7 +12,7 @@
 .modal {
     width: 450px;
     min-height: 581px;
-    background-color: var(--item-text-color);
+    background-color: $item-text-color;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -45,7 +45,7 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         &:hover,
         &:focus  {
-        fill: var(--accent-color);
+        fill: $accent-color;
     }
 }
 
@@ -73,7 +73,7 @@
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: $title-text-color;
     margin-bottom: 12px;
 }
 
@@ -96,7 +96,7 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         &:hover,
         &:focus {
-        border-color: var(--accent-color);
+        border-color: $accent-color;
 }
 }
 
@@ -114,10 +114,10 @@
     cursor: pointer;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     .modal-input:focus + & {
-        fill: var(--accent-color);
+        fill: $accent-color;
     }
     .modal-input:hover + & {
-        fill: var(--accent-color);
+        fill: $accent-color;
     }
 }
 
@@ -125,7 +125,7 @@
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-    color: #757575;
+    color: $primary-text-color;
     display: block;
     margin-bottom: 4px;
 }
@@ -153,7 +153,7 @@
     font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: $primary-text-color;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -178,7 +178,7 @@
 }
     &-link {
     margin-left: 4px;
-    color: var(--accent-color);
+    color: $accent-color;
 }
 }
 
@@ -194,8 +194,8 @@
     padding: 10px 32px;
     border-radius: 4px;
     letter-spacing: 0.06em;
-    background-color: var(--accent-color);
-    color: var(--item-text-color);
+    background-color: $accent-color;
+    color: $item-text-color;
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     margin-left: auto;
@@ -205,8 +205,8 @@
     margin-top: 30px;
     &:hover,
     &:focus {
-    background-color: var(--accent-color);
-    color: var(--item-text-color);
+    background-color: $accent-color;
+    color: $item-text-color;
     
 }
 }
