@@ -517,7 +517,6 @@ body {
 @media screen and (min-width: 768px) {
   .contacts-list {
     display: inline;
-    margin-left: auto;
   }
 }
 
