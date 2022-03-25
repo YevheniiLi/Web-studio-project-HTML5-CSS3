@@ -278,6 +278,12 @@ body {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .header__container {
+    justify-content: space-between;
+  }
+}
+
 .mob-menu {
   position: fixed;
   width: 100vw;
@@ -409,7 +415,7 @@ body {
 @media screen and (min-width: 768px) {
   .menu-open-btn {
     visibility: hidden;
-    display: flex;
+    display: none;
   }
 }
 
@@ -510,9 +516,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .contacts-list {
-    display: flex;
-    margin-left: 84px;
-    flex-wrap: wrap;
+    display: inline;
+    margin-left: auto;
   }
 }
 
@@ -1047,6 +1052,7 @@ body {
   .button-list {
     flex-wrap: nowrap;
     justify-content: center;
+    margin-bottom: 30px;
   }
 }
 
@@ -1054,6 +1060,7 @@ body {
   .button-list {
     flex-wrap: nowrap;
     justify-content: center;
+    margin-bottom: 50px;
   }
 }
 
@@ -1102,6 +1109,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .button-list__item + .button-list__item {
+    margin-bottom: 0px;
+  }
   .button-list__item + .button-list__item + .button-list__item + .button-list__item:nth-last-child(-n + 2) {
     margin-bottom: 0px;
     margin-left: 8px;
@@ -1127,23 +1137,22 @@ body {
   border-bottom: 1px solid #EEEEEE;
 }
 
-.poster-list {
-  margin-bottom: -30px;
-}
-
 @media screen and (min-width: 768px) {
   .poster-list {
     display: flex;
     margin-left: -30px;
-    padding-bottom: -30px;
     flex-wrap: wrap;
   }
 }
 
 .poster-list__item {
-  margin-bottom: 30px;
   justify-content: center;
   position: relative;
+  margin-bottom: 30px;
+}
+
+.poster-list__item:last-child {
+  margin-bottom: 0px;
 }
 
 @media screen and (min-width: 768px) {
